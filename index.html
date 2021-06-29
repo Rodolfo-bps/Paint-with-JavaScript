@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <section id="main">
+        <h3 style="text-align: center;">Paint</h3>
+        <section id="paleta">
+            <b>Elige un color</b>
+            <input type="color" onchange="color(this);">
+            <b>Elige un tamano</b>
+            <input type="number" onchange="linea(this);">
+            <input type="submit" value="Limpiar" onclick="limpiar();">
+        </section>
+
+        <canvas id="canvas">
+
+        </canvas>
+    </section>
+    
+    
+
+    <script src="./funciones.js"></script>
+</body>
+</html>
